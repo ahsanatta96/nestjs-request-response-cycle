@@ -35,7 +35,13 @@ export class LoggingInterceptor implements NestInterceptor {
       tap((res) => {
         const response = context.switchToHttp().getResponse();
         const { statusCode } = response;
-        const contentLength = response.get('content-length');
+        let contentLength = response.get('content-length');
+        if (!contentLength && res) {
+          contentLength = Buffer.byteLength(
+            typeof res === 'string' ? res : JSON.stringify(res),
+            'utf-8',
+          ).toString();
+        }
 
         this.logger.log(`
       ${method} ${url} ${statusCode} ${contentLength} - ${userAgent} ${ip}: ${
