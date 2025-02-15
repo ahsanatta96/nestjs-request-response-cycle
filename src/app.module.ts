@@ -3,9 +3,9 @@ import { APP_GUARD, APP_INTERCEPTOR } from '@nestjs/core';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthGuard } from './guards/auth.guard';
+import { LoggingInterceptor } from './interceptors/logging.interceptor';
 import { AuthMiddleware } from './middleware/auth.middleware';
 import { RequestService } from './services/request.service';
-import { LoggingInterceptor } from './interceptors/logging.interceptor';
 
 @Module({
   imports: [],
