@@ -1,6 +1,6 @@
-# NestJS Request/Response Cycle
+# NestJS Request/ Response Cycle
 
-This repository demonstrates the **NestJS Request/Response Pipeline**, covering middleware, guards, pipes, interceptors, exception filters, and dependency injection.
+This repository demonstrates the **NestJS Request/ Response Pipeline**, covering middleware, guards, pipes, interceptors, exception filters, and dependency injection.
 
 ## 🚀 Features
 
@@ -15,19 +15,15 @@ This repository demonstrates the **NestJS Request/Response Pipeline**, covering 
 
 Clone the repository:
 
-````bash
+```bash
 git clone <repo-url>
 cd <project-folder>
+```
 
-## Installation
+npm install
 
-```bash
-$ npm install
-````
-
-## Running the app
+# Development mode
 
 ```bash
-$ npm run start:dev
-
+npm run start:dev
 ```
