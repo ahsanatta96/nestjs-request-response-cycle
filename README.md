@@ -26,7 +26,7 @@ Install dependencies:
 npm install
 ```
 
-# Run the App
+## Run the App
 
 ```bash
 npm run start:dev
