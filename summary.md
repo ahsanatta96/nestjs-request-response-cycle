@@ -4,7 +4,7 @@ This repositry demonstrates the **NestJS Request/ Response Pipeline**, explainin
 
 ## Pipeline Flow
 
-The image illustrates the flow of a request through the NestJS pipeline, from the initial client request to the final response. The pipeline consists of several stages:
+Here is an illustration of the flow of a request through the NestJS pipeline, from the initial client request to the final response. The pipeline consists of several stages:
 
 1. **Middleware:**
 
