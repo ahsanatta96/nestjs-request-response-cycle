@@ -20,9 +20,13 @@ git clone <repo-url>
 cd <project-folder>
 ```
 
-npm install
+Install dependencies:
 
-# Development mode
+```bash
+npm install
+```
+
+# Run the App
 
 ```bash
 npm run start:dev
